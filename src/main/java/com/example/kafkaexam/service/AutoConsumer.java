@@ -8,7 +8,7 @@ import java.io.IOException;
 @Service
 public class AutoConsumer {
 
-    @KafkaListener(topics = "exam", groupId = "foo")
+    @KafkaListener(topics = "exam1", groupId = "foo")
     public void consume(String message) throws IOException {
         System.out.println(String.format("Consumed message : %s", message));
     }

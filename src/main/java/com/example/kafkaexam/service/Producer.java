@@ -13,7 +13,7 @@ import org.springframework.kafka.support.SendResult;
 public class Producer {
 
     private static final Logger logger = LoggerFactory.getLogger(Producer.class);
-    private static final String TOPIC = "purchases";
+    private static final String TOPIC = "exam2";
 
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;

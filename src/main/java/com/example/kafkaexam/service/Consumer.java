@@ -15,7 +15,7 @@ public class Consumer {
 
     private final Logger logger = LoggerFactory.getLogger(Consumer.class);
 
-    @KafkaListener(id = "myConsumer", topics = "purchases", groupId = "foo", autoStartup = "false")
+    @KafkaListener(id = "consume", topics = "exam2", groupId = "foo", autoStartup = "false")
     public void listen(String value,
                        @Header(KafkaHeaders.RECEIVED_TOPIC) String topic,
                        @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) String key) {
